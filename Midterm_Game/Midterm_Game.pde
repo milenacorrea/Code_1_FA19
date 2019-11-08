@@ -13,6 +13,10 @@ https://forum.processing.org/two/discussion/18333/check-color-of-pixel-and-aroun
 https://forum.processing.org/two/discussion/9355/what-s-the-difference-between-int-negative-color-values-and-float-negative-color-values
 https://forum.processing.org/two/discussion/11590/how-to-make-your-program-reset
 
+Audio:
+https://freesound.org/people/FoolBoyMedia/sounds/219017/
+https://freesound.org/people/Halleck/sounds/121646/
+
 */
 
 import processing.sound.*;
