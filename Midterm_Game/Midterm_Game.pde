@@ -15,6 +15,9 @@ https://forum.processing.org/two/discussion/11590/how-to-make-your-program-reset
 
 */
 
+import processing.sound.*;
+SoundFile bgmusic;
+SoundFile collectflower;
 
 int keyPresses;
 int endLock;
@@ -37,6 +40,11 @@ void setup() {
 
   m = new MazeBorders();
   p = new Player(20, 190);
+  
+  bgmusic = new SoundFile(this, "219017__foolboymedia__forest-song.wav");
+  bgmusic.play();
+  
+  collectflower = new SoundFile(this, "121646__halleck__leaf-rustle-1.wav");
 }
 
 void draw() {

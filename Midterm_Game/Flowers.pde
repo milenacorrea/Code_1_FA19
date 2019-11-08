@@ -37,11 +37,11 @@ class Flower {
   }
 
   void update() {
-    
+
     /* Checking the distance between the player and the flower. If the distance is
-    less than or equal to 5, then the flower will be considered "touched"
-    and will no longer be displayed on the main setup
-    */
+     less than or equal to 5, then the flower will be considered "touched"
+     and will no longer be displayed on the main setup
+     */
     a = dist(float(p.xpos), float(p.ypos), float(flowerOne.xpos), float(flowerOne.ypos));
     b = dist(float(p.xpos), float(p.ypos), float(flowerTwo.xpos), float(flowerTwo.ypos));
     c = dist(float(p.xpos), float(p.ypos), float(flowerThree.xpos), float(flowerThree.ypos));
@@ -49,18 +49,22 @@ class Flower {
 
     if (a <= 5) {
       touchedOne = 1;
+      collectflower.play();
     }
 
     if (b <= 5) {
       touchedTwo = 1;
+      collectflower.play();
     }
 
     if (c <= 5) {
       touchedThree = 1;
+      collectflower.play();
     }
 
     if (d <= 5) {
       touchedFour = 1;
+      collectflower.play();
     }
   }
 }
